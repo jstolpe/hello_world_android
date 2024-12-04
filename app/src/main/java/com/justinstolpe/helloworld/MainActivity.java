@@ -18,7 +18,16 @@ import com.justinstolpe.helloworld.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * Main Activity
+ * Home page for our hello world app.
+ *
+ * @author Justin Stolpe
+ */
 public class MainActivity extends BaseActivity {
+    /**
+     * On create for the activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // call parent
@@ -28,8 +37,11 @@ public class MainActivity extends BaseActivity {
         setupActivity();
     }
 
+    /**
+     * Setup function for activity.
+     */
     public void setupActivity() {
-        // set our view
+        // set our view from the layout folder
         setContentView(R.layout.activity_main);
     }
 }
